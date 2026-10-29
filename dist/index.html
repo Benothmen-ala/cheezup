@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b31">
+  <meta name="description" content="Découvrez CHEZZUP Street & Food à Bouargoub, dans le gouvernorat de Nabeul.">
+  <title>CHEZZUP — Street & Food à Bouargoub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <div class="demo-ribbon"><span class="demo-dot" aria-hidden="true"></span>Site de démonstration <span class="demo-separator" aria-hidden="true">·</span><span class="demo-detail">Menu et tarifs indicatifs, aucune commande transmise</span></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#accueil" aria-label="Cheez Up, accueil"><span>Cheez</span><strong>Up</strong><i class="logo-cheese" aria-hidden="true"></i></a>
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="#carte">La carte</a>
+        <a href="#concept">Le concept</a>
+        <a href="#localisation">Nous trouver</a>
+      </nav>
+      <div class="header-actions">
+        <button class="menu-toggle" type="button" data-toggle-nav aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <button class="cart-trigger" type="button" data-open-cart aria-label="Ouvrir le panier">
+          <svg class="cart-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 4.5h2l2.1 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4l1.4-6.4H6.2M10 20a.8.8 0 1 1-1.6 0 .8.8 0 0 1 1.6 0Zm8 0a.8.8 0 1 1-1.6 0 .8.8 0 0 1 1.6 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Panier</span><span class="cart-count" data-cart-count aria-hidden="true">0</span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigation mobile" hidden>
+      <a href="#carte">La carte <span aria-hidden="true">↗</span></a>
+      <a href="#concept">Le concept <span aria-hidden="true">↗</span></a>
+      <a href="#localisation">Nous trouver <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow hero-tag"><span class="eyebrow-line"></span>Street food · Bouargoub, Nabeul</p>
+        <div class="hero-sign">
+          <h1 id="hero-title"><span class="cheez-word">Cheez</span><span class="up-word">Up</span></h1>
+          <p class="hero-tagline">Bite it. Love it. Cheez Up!</p>
+        </div>
+        <p class="hero-copy">Une expérience street food pleine d’énergie. Parcourez la carte, composez votre envie et passez à table.</p>
+        <div class="hero-actions">
+          <a class="button button-yellow" href="#carte">Découvrir la carte <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#localisation">Nous trouver <span aria-hidden="true">↗</span></a>
+        </div>
+        <a class="hero-scroll" href="#carte">Défiler pour découvrir <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-side-label" aria-hidden="true">CHEZZUP / STREET & FOOD</div>
+      <div class="hero-index" aria-hidden="true"><span>01</span><i></i><span>03</span></div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">GOOD FOOD <span>✦</span> GOOD MOOD <span>✦</span> CHEZZUP <span>✦</span> GOOD FOOD <span>✦</span> GOOD MOOD <span>✦</span> CHEZZUP <span>✦</span></div>
+    </div>
+
+    <section class="menu-section section-pad" id="carte" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow dark"><span class="eyebrow-line"></span>À découvrir</p>
+            <h2 id="menu-title">LA CARTE <span>CHEZZUP.</span></h2>
+          </div>
+          <p class="section-intro">Une sélection pour toutes les envies. Parcourez les catégories et composez votre panier en quelques gestes.</p>
+        </div>
+        <p class="menu-note"><span class="menu-note-mark" aria-hidden="true">i</span><span><strong>Carte illustrative.</strong> Photos, recettes et tarifs seront confirmés par CHEZZUP.</span></p>
+        <div class="filters" role="group" aria-label="Filtrer les produits par catégorie">
+          <button class="filter active" type="button" data-filter="all" aria-pressed="true">Tout voir</button>
+          <button class="filter" type="button" data-filter="pizza" aria-pressed="false">Pizzas</button>
+          <button class="filter" type="button" data-filter="burger" aria-pressed="false">Burgers</button>
+          <button class="filter" type="button" data-filter="side" aria-pressed="false">À partager</button>
+        </div>
+        <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+        <div class="menu-bottom">
+          <p>Les produits et tarifs affichés sont donnés à titre indicatif.</p>
+          <a class="inline-arrow" href="#concept">Découvrir le parcours <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-section section-pad" id="concept" aria-labelledby="feature-title">
+      <div class="container feature-grid">
+        <div class="feature-visual" aria-hidden="true">
+          <div class="feature-circle"><span>CHEEZ<br><strong>UP!</strong></span></div>
+          <span class="feature-star one">✦</span><span class="feature-star two">✦</span>
+          <div class="feature-stamp">BONNES<br>ENVIES<br>BIEN SERVIES</div>
+          <span class="feature-orbit orbit-one"></span><span class="feature-orbit orbit-two"></span>
+        </div>
+        <div class="feature-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Simple comme bonjour</p>
+          <h2 id="feature-title">VOTRE ENVIE.<br><span>VOTRE CHEZZUP.</span></h2>
+          <p class="feature-intro">Un parcours pensé pour le téléphone : explorez la carte, ajoutez vos favoris et consultez votre récapitulatif.</p>
+          <div class="steps">
+            <div><span>01</span><p><strong>Parcourez</strong>Repérez votre prochaine envie.</p></div>
+            <div><span>02</span><p><strong>Composez</strong>Ajoutez vos favoris au panier.</p></div>
+            <div><span>03</span><p><strong>Récapitulez</strong>Retrouvez vos choix en un coup d’œil.</p></div>
+          </div>
+          <a class="button button-yellow" href="#carte">Explorer la carte <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-section section-pad" id="localisation" aria-labelledby="location-title">
+      <div class="container location-grid">
+        <div class="location-copy">
+          <p class="eyebrow dark"><span class="eyebrow-line"></span>On se retrouve où ?</p>
+          <h2 id="location-title">CHEZZUP,<br><span>À BOUARGOUB.</span></h2>
+          <p class="location-intro">Retrouvez CHEZZUP Street & Food à Bouargoub, dans le gouvernorat de Nabeul.</p>
+          <div class="location-details">
+            <div><span class="detail-icon" aria-hidden="true">⌖</span><p><small>Adresse</small><strong>Bouargoub, Nabeul, Tunisie</strong></p></div>
+            <div><span class="detail-icon" aria-hidden="true">◷</span><p><small>Horaires</small><strong>À confirmer auprès de CHEZZUP</strong></p></div>
+          </div>
+          <a class="button button-dark" href="https://www.google.com/maps/search/?api=1&amp;query=36.5360308%2C10.5486798" target="_blank" rel="noopener noreferrer">Ouvrir dans Google Maps <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="location-card" role="img" aria-label="Carte illustrative situant CHEZZUP à Bouargoub, Nabeul">
+          <span class="map-grid" aria-hidden="true"></span>
+          <span class="map-route route-one" aria-hidden="true"></span><span class="map-route route-two" aria-hidden="true"></span>
+          <div class="map-pin"><span>⌖</span><strong>CHEZZUP</strong><small>BOUARGOUB</small></div>
+          <div class="map-coordinate">36.5360° N&nbsp; 10.5487° E</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <a class="logo footer-logo" href="#accueil" aria-label="Cheez Up, retour en haut"><span>Cheez</span><strong>Up</strong></a>
+      <p>Street & Food <span>·</span> Bouargoub</p>
+      <a class="footer-top" href="#accueil">Retour en haut <span aria-hidden="true">↑</span></a>
+    </div>
+    <div class="container footer-disclaimer">Site de démonstration. Produits, tarifs et photos indicatifs. Aucune commande réelle n’est transmise.</div>
+  </footer>
+
+  <button class="mobile-order" type="button" data-open-cart>Voir mon panier <span data-mobile-count>0 article</span></button>
+  <p class="sr-only" id="announcer" aria-live="polite" aria-atomic="true"></p>
+
+  <div class="overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-describedby="cart-description" hidden>
+    <div class="cart-header">
+      <div><small>Votre commande</small><h2 id="cart-title">LE PANIER</h2></div>
+      <button class="close-button" type="button" data-close-cart aria-label="Fermer le panier">×</button>
+    </div>
+    <p class="cart-description" id="cart-description">Votre sélection reste enregistrée pendant cette visite.</p>
+    <div class="cart-body" id="cart-body" aria-live="polite"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Sous-total indicatif</span><strong id="cart-total">0,000 DT</strong></div>
+      <button class="button button-yellow checkout-button" type="button" id="checkout-button" disabled>Voir le récapitulatif <span aria-hidden="true">↗</span></button>
+      <p>Aucune commande n’est envoyée depuis cette démonstration.</p>
+    </div>
+  </aside>
+
+  <div class="summary-overlay" id="summary-overlay" hidden>
+    <div class="summary-dialog" role="dialog" aria-modal="true" aria-labelledby="summary-title" aria-describedby="summary-description">
+      <button class="close-button" type="button" id="close-summary" aria-label="Fermer le récapitulatif">×</button>
+      <span class="summary-icon" aria-hidden="true">✓</span>
+      <p class="eyebrow dark">Démonstration</p>
+      <h2 id="summary-title">VOTRE RÉCAPITULATIF</h2>
+      <p id="summary-description">Retrouvez ici le détail de votre sélection.</p>
+      <div id="summary-content"></div>
+      <p class="summary-caution">Cette maquette ne prend pas de commande réelle.</p>
+      <button class="button button-dark" type="button" id="copy-summary">Copier le récapitulatif</button>
+    </div>
+  </div>
+</body>
+</html>
